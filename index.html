@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scissor Villa | Sample Salon Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">Scissor <span>Villa</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Book now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">Sample salon website · Karachi</p>
+          <h1>A fresh look, made for <em>you.</em></h1>
+          <p class="intro">Welcome to Scissor Villa, 
+            a sample unisex salon page for hair services.</p>
+          <a class="button" href="#book">Book an appointment <span>→</span></a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Salon chair and mirror" />
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">What we offer</p>
+          <h2>Services &amp; sample prices</h2>
+          <p>These prices are only for this learning project.
+             Change them to real prices before using this for a business.</p>
+        </div>
+        <div class="price-list">
+          <article><h3>Hair trimming &amp; finish</h3><p>Consultation, cut, and simple styling.</p><strong>PKR 1,000</strong></article>
+          <article><h3>Hair colouring</h3><p>Colour service after a consultation.</p><strong>From PKR 4,000</strong></article>
+          <article><h3>Event styling</h3><p>Styling for a special occasion.</p><strong>From PKR 2,500</strong></article>
+          <article><h3>Grooming</h3><p>Beard trim and grooming service.</p><strong>PKR 1,000</strong></article>
+        </div>
+      </section>
+
+      <section class="proof section">
+        <div>
+          <p class="eyebrow">Trust matters</p>
+          <h2>Show real work and real feedback.</h2>
+        </div>
+        <p>This demo deliberately does not include invented customer reviews, ratings, or business claims. A real salon can add verified customer feedback here.</p>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Salon Interior</p>
+          <h2>A calm place for your next look</h2>
+        </div>
+        <div class="gallery-grid">
+          <img src= "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Salon interior with mirrors" />
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85" alt="Hair products on a salon shelf" />
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=85" alt="Stylist working in a salon" />
+        </div>
+      </section>
+
+      <section class="booking" id="book">
+        <div class="booking-copy">
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Book your appointment</h2>
+          <p>Fill in this sample form. It will show a confirmation message, but it does not send an appointment to a real salon.</p>
+        </div>
+        <form id="booking-form">
+          <label>Name<input name="name" type="text" placeholder="Your name" required /></label>
+          <label>Phone number<input name="phone" type="tel" placeholder="03XX XXXXXXX" required /></label>
+          <label>Service<select name="service" required><option value="">Choose a service</option><option>Haircut & finish</option><option>Hair colouring</option><option>Event styling</option><option>Grooming</option></select></label>
+          <label>Preferred date<input name="date" type="date" required /></label>
+          <button class="button" type="submit">Request appointment <span>→</span></button>
+          <p class="form-message" id="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="#home">Scissor <span>Villa</span></a>
+      <div><p>Sample contact: +92 300 1234567</p><p>Karachi, Pakistan</p></div>
+      <div class="socials"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="mailto:hello@example.com">Email</a></div>
+      <p class="small">Learning project — replace all sample contact details and links before publishing.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

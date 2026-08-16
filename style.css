@@ -1,0 +1,25 @@
+:root { --ink:#22201d; --cream:#f8f4ee; --peach:#f0c6b5; --rose:#7b3f00; --line:#d9d0c6; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--cream); font-family:"DM Sans", sans-serif; }
+h1,h2,h3,p { margin-top:0; }
+h1,h2 { font-family:"Playfair Display", serif; }
+.site-header { display:flex; align-items:center; justify-content:space-between; max-width:1180px; margin:auto; padding:24px 30px; }
+.logo { color:var(--ink); font-family:"Playfair Display", serif; font-size:1.55rem; font-weight:700; text-decoration:none; }
+.logo span, .eyebrow { color:var(--rose); }
+nav { display:flex; gap:24px; } nav a,.socials a { color:var(--ink); text-decoration:none; font-size:.92rem; } nav a:hover,.socials a:hover { color:var(--rose); }
+.hero { display:grid; grid-template-columns:1fr 1fr; min-height:590px; max-width:1180px; margin:auto; padding:35px 30px 65px; gap:55px; align-items:center; }
+.eyebrow { color: #2d1739;
+     letter-spacing:.13em; text-transform:uppercase; font-size: 40px; }
+h1 { font-size:clamp(3.1rem,6vw,5.5rem); line-height:.98; margin-bottom:22px; } h1 em { color:var(--rose); font-weight:600; }
+.intro { max-width:500px; color:#625c55; font-size:1.08rem; line-height:1.7; }
+.button { display:inline-flex; gap:15px; align-items:center; margin-top:14px; padding:15px 22px; background:var(--ink); border:1px solid var(--ink); color:white; text-decoration:none; font:700 .9rem "DM Sans",sans-serif; cursor:pointer; } .button:hover { background:var(--rose); border-color:var(--rose); }
+.hero-image img { width:100%; height:490px; object-fit:cover; border-radius:160px 160px 16px 16px; }
+.section { max-width:1180px; margin:auto; padding:92px 30px; } .section-heading { max-width:600px; } h2 { font-size:clamp(2.3rem,4vw,3.6rem); line-height:1.08; margin-bottom:16px; } .section-heading > p:last-child { color:#625c55; line-height:1.6; }
+.price-list { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); margin-top:38px; border:1px solid var(--line); } .price-list article { padding:29px; background:var(--cream); } .price-list h3 { font-family:"Playfair Display",serif; font-size:1.45rem; margin-bottom:8px; } .price-list p { color:#625c55; line-height:1.5; margin-bottom:18px; } .price-list strong { color:var(--rose); }
+.proof { display:grid; grid-template-columns:1fr 1fr; gap:60px; background:var(--peach); max-width:none; padding-left:max(30px, calc((100% - 1120px)/2)); padding-right:max(30px, calc((100% - 1120px)/2)); } .proof > p { max-width:500px; line-height:1.75; align-self:center; }
+.gallery-grid { display:grid; grid-template-columns:1.1fr .9fr .9fr; gap:16px; margin-top:36px; } .gallery-grid img { width:100%; height:330px; object-fit:cover; } .gallery-grid img:first-child { height:430px; }
+.booking { display:grid; grid-template-columns:1fr 1fr; gap:70px; background:var(--ink); color:white; padding:90px max(30px, calc((100% - 1120px)/2)); } .booking .eyebrow { color:#f0c6b5; } .booking-copy p:last-child { color:#ded7ce; line-height:1.65; max-width:450px; }
+form { display:grid; grid-template-columns:1fr 1fr; gap:16px; } label { font-size:.82rem; font-weight:700; } input,select { display:block; width:100%; margin-top:7px; padding:12px 2px; border:0; border-bottom:1px solid #aaa198; background:transparent; color:white; font:1rem "DM Sans",sans-serif; } select option { color:var(--ink); } form .button, .form-message { grid-column:1/-1; } .form-message { min-height:20px; margin:0; color:#f0c6b5; }
+.footer { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:25px; max-width:1180px; margin:auto; padding:45px 30px 25px; } .footer p { color:#625c55; font-size:.9rem; margin-bottom:7px; } .socials { display:flex; gap:15px; flex-wrap:wrap; } .small { grid-column:1/-1; border-top:1px solid var(--line); padding-top:20px; margin-top:12px; }
+@media (max-width:720px) { .site-header { padding:20px; } nav { gap:13px; } nav a { font-size:.8rem; } .hero,.booking,.proof { grid-template-columns:1fr; gap:35px; } .hero { padding:35px 20px 65px; } .hero-image { grid-row:1; } .hero-image img { height:380px; border-radius:110px 110px 12px 12px; } .section { padding:65px 20px; } .price-list,form,.footer { grid-template-columns:1fr; } .gallery-grid { grid-template-columns:1fr; } .gallery-grid img,.gallery-grid img:first-child { height:290px; } .booking { padding:65px 20px; } .footer { padding:40px 20px 20px; } }
